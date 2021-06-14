@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0%;
+        }
+        
+        body {
+            background-color: rgb(211, 207, 211);
+        }
+        
+        .one {
+            background-color: white;
+            width: 100%;
+            height: 150px;
+            border: 1px solid rgb(231, 228, 228);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .one a {
+            text-decoration: none;
+        }
+        
+        h5 {
+            left: 50px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .two {
+            width: 100%;
+            height: 350px;
+            background-color: rgb(211, 207, 211);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        
+        .twoleft {
+            background-color: rgb(245, 240, 240);
+            width: 80%;
+            height: 350px;
+            display: inline-block;
+            border: 1px solid rgb(197, 195, 195);
+        }
+        
+        .tworight {
+            display: inline-block;
+            height: 350px;
+        }
+        
+        .tworight img {
+            border: 5px solid white;
+        }
+        
+        h6 {
+            width: 100%;
+            height: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        p {
+            width: 100%;
+            height: 10px;
+            color: rgb(170, 166, 170);
+            text-align: center;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        #clr {
+            color: green;
+        }
+        
+        .twoleftup {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(248, 243, 242);
+            border: 1px solid rgb(216, 213, 213);
+        }
+        
+        .twoleftdown {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .twoleftdown a:hover {
+            transform: scale(1.05);
+        }
+        
+        .tworight a img:hover {
+            transform: scale(1.02);
+        }
+        
+        .three {
+            width: 100%;
+            height: 280px;
+            background-color: rgb(216, 211, 211);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            /* d-flex justify-content-around align-items-center */
+        }
+        
+        .three div {
+            width: 32%;
+            height: 250px;
+            background-color: lavender;
+            border: 1px solid rgb(189, 183, 183);
+        }
+        
+        .four {
+            width: 100%;
+            height: 350px;
+            background-color: rgb(241, 245, 241);
+            border: 1px solid rgb(189, 183, 183);
+        }
+        
+        .four_up {
+            width: 100%;
+            height: 50px;
+            border: 1px solid rgb(189, 183, 183);
+        }
+        
+        .four_down {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* .four_down div {
+            width: 150px;
+            height: 150px;
+        } */
+        
+        .four_down a:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- <nav class="navbar navbar-expand-sm bg-primary navbar-light">
+            <a class="navbar-brand" href="#">Flipkart</a>
+
+            <form class="form-inline" action="/action_page.php">
+                <div style="position: relative;">
+                    <i class="fas fa-search" style="position: absolute; right:20px; top:12px ;"> </i>
+                    <input class="form-control mr-sm-2" style="width: 600px;" type="text" placeholder="Search for product, brand and more">
+
+                </div>
+                <button class="btn btn-light" type="submit">Login</button>
+
+            </form>
+            <div>
+
+                <ul style="list-style: none; ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbardrop" data-toggle="dropdown">
+                      More </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"> <i class='fas fa-bell'></i>Notification preferences</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-search"> </i>Sell on Flipkart</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-briefcase"> </i>24*7 Customer Support</a>
+                            <a class="dropdown-item" href="#"><i class="material-icons">&#xe8e5;</i>Advertise</a>
+                            <a class="dropdown-item" href="#"><i class="material-icons">&#xe2c4;</i>Download App</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a class="dropdown-item bg-primary" style=" color: white;" href="#"> <i class='fas fa-cart-plus'></i>Cart</a>
+            </div>
+        </nav> -->
+
+
+
+
+
+        <nav class="navbar navbar-expand-sm bg-primary navbar-light" style="display: flex; flex-direction: row; justify-content: space-evenly;
+        align-items: center;">
+
+            <a class="navbar-brand" href="#" style="margin-left:200px;">Flipkart</a>
+            <form class="form-inline" action="/action_page.php">
+                <div style="position: relative;">
+                    <i class="fas fa-search" style="position: absolute; right:20px; top:12px ;"> </i>
+                    <input class="form-control mr-sm-2" style="width: 600px;" type="text" placeholder="Search for product, brand and more">
+
+                </div>
+            </form>
+
+            <button class="btn btn-light " style="color:rgb(35, 35, 219)" type="submit">Login</button>
+
+            <ul style="list-style: none; ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbardrop" data-toggle="dropdown">
+                  More </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"> <i class='fas fa-bell'></i>Notification preferences</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-search"> </i>Sell on Flipkart</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-briefcase"> </i>24*7 Customer Support</a>
+                        <a class="dropdown-item" href="#"><i class="material-icons">&#xe8e5;</i>Advertise</a>
+                        <a class="dropdown-item" href="#"><i class="material-icons">&#xe2c4;</i>Download App</a>
+                    </div>
+                </li>
+            </ul>
+
+            <a href="#" style="color: white"> <i class='fas fa-cart-plus' style='color:white'></i></i> Cart</a>
+
+        </nav>
+        <!-- ---------------- -->
+        <div class="one ">
+            <div>
+                <a href="">
+                    <img src="a.png" alt="Top Offers" style="height: 100px; width: 100px;">
+                    <p>Top offers</p>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="b.png" alt="Grocery" style="height: 100px; width: 100px;">
+                    <p>Grocery</p>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="c.png" alt="Mobiles" style="height: 100px; width: 100px;">
+                    <p>Mobiles</p>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="d.png" alt="Fashion" style="height: 100px; width: 100px;">
+                    <p>Fashion</p>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="e.png" alt="Electronics" style="height: 100px; width: 100px;">
+                    <p>Electronics</p>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="f.png" alt="Home" style="height: 100px; width: 100px;">
+                    <p>Home</p>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="g.png" alt="Appliances" style="height: 100px; width: 100px;">
+                    <p>Appliances</p>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="h.png" alt="travel" style="height: 100px; width: 100px;">
+                    <p>Travel</p>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="i.png" alt="Beauty, Toys " style="height: 100px; width: 100px;">
+                    <p>Beauty, Toys</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- -----crousal------------ -->
+        <div class="container-fluid p-3">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="aa.jpg" alt="Los Angeles" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="bb.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="cc.jpg" alt="New york" style="width:100%;">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!------two---- ------->
+
+        <div class="two ">
+            <div class="twoleft">
+                <div class="twoleftup d-flex justify-content-around align-items-center">
+                    <h5 style=" display:inline-block ">Deals of the Day</h5>
+                    <button class="btn  btn-primary  " style="display: inline-block;" type="submit ">View All</button>
+                </div>
+                <div class="twoleftdown ">
+                    <a href="">
+                        <div>
+                            <img src="aaaa.jpeg" alt="aaaa" width="170px" height="190px" />
+                            <div class="left_d_body">
+                                <h6>Watches</h6>
+                                <p id="clr">upto 60% off</p>
+                                <p> Rolex,Titan</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="bbbb.jpeg" alt="bbbb" width="170px" height="190px" />
+                            <div class="left_d_body">
+                                <h6>Kitchen</h6>
+                                <p id="clr">upto 50% off</p>
+                                <p>Bajaj, prestige</p>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <a href="">
+                        <div>
+                            <img src="cccc.jpeg" alt="cccc" width="170px" height="190px" />
+                            <div class="left_d_body">
+                                <h6>Fashion</h6>
+                                <p id="clr">upto 50% off</p>
+                                <p>Roadster, jockey</p>
+                            </div>
+                        </div>
+
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="dddd.jpeg" alt="cccc" width="170px" height="190px" />
+                            <div class="left_d_body">
+                                <h6>Fashion</h6>
+                                <p id="clr">upto 50% off</p>
+                                <p>Roadster, jockey</p>
+                            </div>
+                        </div>
+
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="cccc.jpeg" alt="cccc" width="170px" height="190px" />
+                            <div class="left_d_body">
+                                <h6>Fashion</h6>
+                                <p id="clr">upto 50% off</p>
+                                <p>Roadster, jockey</p>
+                            </div>
+                        </div>
+
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="dddd.jpeg" alt="cccc" width="170px" height="190px" />
+                            <div class="left_d_body">
+                                <h6>Fashion</h6>
+                                <p id="clr">upto 50% off</p>
+                                <p>Roadster, jockey</p>
+                            </div>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="tworight">
+                <a href="">
+                    <img src="furniture.jpg" alt=" India ka furniture studio" style="width: 240px; height: 340px; margin-left: 50px;">
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- ------three----------------- -->
+        <div class="three ">
+            <div>
+                <a href="">
+                    <img src="aaa.jpg" alt="aaa" style="width: 99%; height: 100%;">
+                </a>
+
+            </div>
+            <div>
+                <a href="">
+                    <img src="bbb.jpg" alt="aaa" style="width: 99%; height: 100%;">
+                </a>
+
+            </div>
+            <div>
+                <a href="">
+                    <img src="ccc.jpg" alt="aaa" style="width: 99%; height: 100%;">
+                </a>
+
+            </div>
+        </div>
+
+        <!-- ------four-------------- -->
+        <div class="four">
+            <div class="four_up d-flex justify-content-around align-items-center">
+                <h5 style=" display:inline-block "> Trending Offers upto 50% off </h5>
+                <button class="btn  btn-primary  " style="display: inline-block;" type="submit "> View All</button>
+            </div>
+            <div class="four_down d-flex justify-content-around align-items-center">
+                <a href="">
+                    <div>
+                        <img src="f1.jpeg" alt="f1" width="150px" height="180px" />
+                        <div class="left_d_body">
+                            <h6>Watches</h6>
+                            <p id="clr">upto 60% off</p>
+                            <p> Rolex,Titan</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="f2.jpeg" alt="f2" width="150px" height="180px" />
+                        <div class="left_d_body">
+                            <h6>Kitchen</h6>
+                            <p id="clr">upto 50% off</p>
+                            <p>Bajaj, prestige</p>
+                        </div>
+                    </div>
+
+                </a>
+
+                <a href="">
+                    <div>
+                        <img src="f3.jpeg" alt="f3" width="150px" height="180px" />
+                        <div class="left_d_body">
+                            <h6>Fashion</h6>
+                            <p id="clr">upto 50% off</p>
+                            <p>Roadster, jockey</p>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="">
+                    <div>
+                        <img src="f4.jpeg" alt="f4" width="150px" height="180px" />
+                        <div class="left_d_body">
+                            <h6>Fashion</h6>
+                            <p id="clr">upto 50% off</p>
+                            <p>Roadster, jockey</p>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="">
+                    <div>
+                        <img src="f5.jpeg" alt="f5" width="150px" height="180px" />
+                        <div class="left_d_body">
+                            <h6>Fashion</h6>
+                            <p id="clr">upto 50% off</p>
+                            <p>Roadster, jockey</p>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="">
+                    <div>
+                        <img src="f6.jpeg" alt="f6" width="150px" height="180px" />
+                        <div class="left_d_body">
+                            <h6>Fashion</h6>
+                            <p id="clr">upto 50% off</p>
+                            <p>Roadster, jockey</p>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="">
+                    <div>
+                        <img src="f7.jpeg" alt="f7" width="150px" height="180px" />
+                        <div class="left_d_body">
+                            <h6>Fashion</h6>
+                            <p id="clr">upto 50% off</p>
+                            <p>Roadster, jockey</p>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="" style="text-decoration: none;">
+                    <div>
+                        <img src="f8.jpeg" alt="f8" width="150px" height="180px" />
+                        <div class="left_d_body">
+                            <h6>Fashion</h6>
+                            <p id="clr">upto 50% off</p>
+                            <p>Roadster, jockey</p>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+        </div>
+
+        <!-- ---------- -->
+    </div>
+
+
+</body>
+
+</html>
